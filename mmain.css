@@ -1,0 +1,88 @@
+.container{
+    background: linear-gradient(red,yellow);
+    box-shadow: 3px 3px 5px orange;
+}
+img{
+    max-width: 100%;
+    height:auto;
+    padding:5px;
+    margin:auto;
+    display:block ;
+}
+.image{
+    /*border: 10px solid black;
+    border-radius: 50px;*/
+        width:100%;
+        height:auto;
+    padding: 5px;
+    /*margin:60px;*/
+}
+
+h1{
+    font-family:'Long Cang';
+}
+h2{
+    font-family: 'Open Sans Condensed';
+}
+h3{
+    font-family: 'Ranchers';
+}
+button{
+    color:black;
+    padding:10px 20px/*10 for top,bottom   20 for right,left
+        otherwise the order of acceptance is top right bottom left*/
+        border:2px solid black;
+}
+
+.row{
+    display:flex;/*allows to let the change in size of window make no difference on the appearance of the page*/
+    width:100%;/*to allow use of 100% viewport*/
+}
+
+.row::after{
+    clear:both;/*not allow the content to be on either side of the image(left or right)*/
+    content:"";/*sets the content to the string; in this case it is empty string that means on the sides of the image the content is empty string, technically written nothing!*/
+}
+
+.col-1{width:8.33%;}/*that maens that the col-1 type will occupy 8.33% of the viewport. This came out from dividing the viewport(i.e. 100%) to 12 parts so 100/12=8.33% */
+.col-2{width:16.66%;}/*that maens that the col-2 type will occupy 16.66% of the viewport. This came out from 8.33+8.33 i.e. of the size twice as that of col-1 */
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+* {
+    box-sizing: border-box;
+    /* * is to refer to all like in SQL box-sizing is the width and ht of the box which are the values of properties ht+width(i.e. ht and width specified without padding and border)+padding+border. by setting box-sizing to border-box the overall box-sizing becomes equal to ht and width specified(with padding and border, if specified) */
+}
+
+[class*="col-"]{
+    border:10px solid red;
+    padding:5px;
+    float:left;
+}
+p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

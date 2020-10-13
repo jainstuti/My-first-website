@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>My CSS Website</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="topnav-right"><a href="#signip">Sign Up</a></li>
+                <li class="topnav-right"><a href="#signin">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li> 
+                
+                <!--as text in anchor tag we have witten unicode for trigram(the three lines stacked from bottom to top so that when the window size decreases the icons come under dropdown menu.Unicodes are editable just like text)-->
+                
+            </ul>
+        </nav>
+        
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftside-col"> <!--adding just to ease if I were to change it in future -->
+                        <h1  class="large">Crazy Radness</h1>
+                        <h1  class="large">Made For Developers</h1>
+                    </div>
+                        <form>
+                            <div class="leftside-col">
+                                <h2>Username</h2>
+                                <input class="inputbox" name="username" type="text" placeholder="username"> 
+                                <!--placeholder specifies the text which will appear in the box before user starts typing and name is to just refer to a value in form-->
+                                <h2>Password</h2>
+                                <input class="inputbox" name="password" type="text" placeholder="password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="rightside-col">
+                                <div class="videoContainer">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lLmTuIQZb9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <header>
+            <!-- we can't add header in footer, in address tag, can't nest header in header-->
+            <h1 class="section2Header">The Standards of Awesomeness</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="chatWithMe.png">
+                        </div>
+                        <label>Chat with Me</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="learnToCode.jpeg">
+                        </div>
+                        <label>Learn to Code</label>
+                        <!-- below is the dummy text from lorem ipsum which looks more professional than typing random letters from keyboard -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="buildEmpire.png">
+                        </div>
+                        <label>Build an Empire</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="learnMore">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <article> <!--we have added an article here because if we add more articles they will stack one underneath the other. Articles are used to write blogpost, comment or news article etc. And in it we have added p tag b/c they add default margin on top and bottom of text -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </article>
+                </div>
+                <div class="col-5">
+                    <div class="slopeIcon">
+                        <img src="myChannel.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--kind of info we can add footer is authorship info, contact info, copyright info, back-to-top link-->
+        <footer class="footsy">
+            <div class="row">
+             <div class="col-3 mobileStack">
+              <h1>Company</h1>
+              <ul>
+               <li>About</li>
+               <li>Blog</li>
+               <li>Careers</li>
+              </ul>
+             </div>
+                <div class="col-3 mobileStack">
+              <h1>Company</h1>
+              <ul>
+               <li>About</li>
+               <li>Blog</li>
+               <li>Careers</li>
+              </ul>
+             </div>
+             <div class="col-3 mobileStack">
+              <h1>Company</h1>
+              <ul>
+               <li>About</li>
+               <li>Blog</li>
+               <li>Careers</li>
+              </ul>
+             </div>
+             <div class="col-3 mobileStack">
+              <h1>Company</h1>
+              <ul>
+               <li>About</li>
+               <li>Blog</li>
+               <li>Careers</li>
+              </ul>
+             </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+        <script>
+            function dropdownMenu(){
+                var x=document.getElementById("dropdownClick");
+                /* dicument is referring to the html document since the script part is that of javascript and is supposed to be written in another separate file */
+                if(x.className === "topnav"){
+                    x.className += " responsive";
+                    /* to change topnav to topnav.responsive */
+                }else{
+                    x.className="topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
