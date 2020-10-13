@@ -10,6 +10,7 @@ ________________________________________________________________________________
 
 Section 3
 
+<img width="1440" alt="Screenshot 2020-10-13 at 8 01 21 PM" src="https://user-images.githubusercontent.com/34738261/95889199-befaca00-0d9f-11eb-8110-611f858a55a4.png">
 
 
 It has the following sections:
