@@ -7,11 +7,16 @@ This is a **responsive** sample website showcasing my youtube channel. It is com
 <img width="1440" alt="Screenshot 2020-10-13 at 8 01 04 PM" src="https://user-images.githubusercontent.com/34738261/95888886-50b60780-0d9f-11eb-88a6-6aa5de2893ce.png">
 
 
+
+
+
 **Section 3**
 
 <img width="1440" alt="Screenshot 2020-10-13 at 8 01 21 PM" src="https://user-images.githubusercontent.com/34738261/95889199-befaca00-0d9f-11eb-8110-611f858a55a4.png">
 
-____________________________________________________________________________________________________________________________________________________
+
+
+
 
 **Section 4 and 5**
 
