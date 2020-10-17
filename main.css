@@ -7,13 +7,13 @@ footer{
 }
 
 body{
-    line-height: 1; /*i.e. the amount of space a block of text to take vertically*/
-    margin:0;   /* so that everything is tightly packed b/c when it is launched on brower some browsers add margins so to avoid it... */
+    line-height: 1; 
+    margin:0;   
 }
 
 label{
     font-size:35px;
-    font-weight:600;/*bold is 300 so bit bolder than bold*/
+    font-weight:600;
 }
 .container{
     
@@ -34,14 +34,14 @@ article p{
 }
 .row{
     width: 100%;
-    display: flex; /*this allows us to add more properties like wrap*/
-    flex-wrap: wrap;/*when the screen shrinks it shifts the overflowing content downwards*/
+    display: flex; 
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .row::after{
     display: table;
-    clear: both;/* to clear both floats, if present */
+    clear: both;
     content="";
 }
 
@@ -59,9 +59,9 @@ article p{
 .col-12{width:100%;}
 
 *{
-    /* * is to refer to all elements on the page*/
+    
     box-sizing: border-box;
-    /*it is for including padding, margin in the total size specified*/
+    
 }
 /*################ nav bar ########################*/
 
@@ -74,22 +74,22 @@ nav ul{
     background-color: #eee;
     margin:0;
     padding: 0;
-    overflow: hidden;/*if the things donot fit in view port just clip off the extra portion */
+    overflow: hidden;
 }
 
 ul.topnav li{
-    list-style: none; /*this is to remove bullet points from ul. This is not necessary here because <a> does it by tradition but just to ensure...*/
-    float: left;/*i.e. li should be horizontal not vertical*/
+    list-style: none; 
+    float: left;
 }
 
 ul.topnav li.topnav-right{
-    float: right;/*sign up/in should be on the right*/
+    float: right;
 }
 
 ul.topnav li a{
     display:block;
-    text-decoration:none;/*to remove underline from links*/
-    min-height:16px;/*to ensure even if the window size is small the min height of text should not be less than 16px b/c for navbar it must be easy to click.Instead of min-height, we can also use fint-size but former ensures the min height*/
+    text-decoration:none;
+    min-height:16px;
     text-align: center;
     padding:14px;
     text-transform: uppercase;
@@ -98,42 +98,32 @@ ul.topnav li a{
 }
 
 ul.topnav li a:hover{
-    background: #0080ff; /*a shade of blue*/
-    color:#fff; /*white */
+    background: #0080ff; 
+    color:#fff; 
 }
 
 ul.topnav li.dropdownIcon {
-    display: none;/* b/c it is not needed on large screen */
+    display: none;
 }
  
 /*################# custom styles##################*/
 
 #section-1-gradient{
-    background: #076DFF; /* hexcode for blue shade for browser which donot support gradient */
-    background: -webkit-linear-gradient(#076DFF,#65a5ff);/*  for chrome, safari*/
-    background: -o-linear-gradient(#076DFF,65a5ff);/* for opera*/
-    background: -moz-linear-gradient(#076DFF,65a5ff);/*for mozilla firefox*/
-    background: linear-gradient(#076DFF,65a5ff);/*for standard syntax; the third party browser which may not support gradient but we have them to support using it */ 
+    background: #076DFF; 
+    background: -webkit-linear-gradient(#076DFF,#65a5ff);
+    background: -o-linear-gradient(#076DFF,65a5ff);
+    background: -moz-linear-gradient(#076DFF,65a5ff);
+    background: linear-gradient(#076DFF,65a5ff);
 }
 
 .box{
-    text-align:center;/*it will align image in it too*/
+    text-align:center;
     margin:24px;
     padding: 36px 24px 40px 24px;
     border-radius: 7px;
     background: #fff;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15),
         0 2px 3px 0 rgba(0,0,0,.1);
-    /* in box-shadow the first 0 is where do I need to put shadow relative to the box.0 means just underneath the box, neither right nor left; -ve for left and +ve for right
-    second is same but for vertical; +ve for bottom -ve for top
-    third is for the amount by which we want to blur the shadow
-    fourth is the spread of blurness
-    we can add colors by name or by hexcode or by rgb. Here a is for opacity 
-    first is for shadow color
-    second : background color
-    third box color
-    fouth opacity
-    after comma we are again writing similar code to add another layer of color to the box shadow*/
 }
 .slopeIcon img{
     display: block;
@@ -162,7 +152,7 @@ button.learnMore{
     width:100%;
 }
 .leftside-col{
-    margin-left: 30%;/*here we are specifying % to make it more flexible to change in size of screen that pixels would have done */
+    margin-left: 30%;
 }
 
 .rightside-col{
@@ -184,9 +174,9 @@ form h2{
     
 }
 
-input[type="text"]{  /*attribute selector to select the elements with particular attributes.We are specifyin' type here to be specific*/
+input[type="text"]{  
     font-size: 20px;
-    width: 400px;  /*width of the input box*/
+    width: 400px;  
     min-width: 100px;
     padding: 5px;
     border-radius:7px; 
@@ -215,7 +205,7 @@ footer.footsy ul li{
     line-height: 1.2;
 }
 /*################### mobile ######################*/
-@media screen and (max-width:680px){  /*for mobiles,tablets or screen width<680px */
+@media screen and (max-width:680px){  
     ul.topnav li:not(:nth-child(1)){
         display:none ;
     }
@@ -226,17 +216,17 @@ footer.footsy ul li{
     }
     
     ul.topnav.responsive li.dropdownIcon{
-        position: absolute;/* to keep the trigram as it is when making dropdown */
+        position: absolute;
         top:0;
         right:0;
-        /* to keep it in top right */
+        
     }
     ul.topnav.responsive{
-        position: relative;/* to ensure that its position does not change*/
+        position: relative;
     }
     
     ul.topnav.responsive li{
-        display:inline;/* i.e. display in a single row */
+        display:inline;
         float: none;
     }
     
